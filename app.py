@@ -8,7 +8,7 @@ CORS(app)
 app.config['SECRET_KEY'] = 'secret!'
 socketIO = SocketIO(app, cors_allowed_origins="*")
 conn = psycopg2.connect(
-    host="backend.myself.health",
+    host="ec2-34-230-149-169.compute-1.amazonaws.com",
     database="d7pml5pkjic32v",
     user="hpqvlmmjobbfyn",
     password="1eaf6697e7cb6c35fc065f42d18b3f81240c3207854405890f8269b4ce01e0de",
@@ -16,6 +16,7 @@ conn = psycopg2.connect(
 )
 cur = conn.cursor()
 response_mimetype = 'application/json'
+print("Success")
 
 
 @socketIO.on('time')
