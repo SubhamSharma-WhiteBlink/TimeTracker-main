@@ -8,10 +8,10 @@ CORS(app)
 app.config['SECRET_KEY'] = 'secret!'
 socketIO = SocketIO(app, cors_allowed_origins="*")
 conn = psycopg2.connect(
-    host="ec2-35-174-35-242.compute-1.amazonaws.com",
-    database="d91ofjqab30922",
-    user="pcvevvbafeeklx",
-    password="1068584413e6fb20c45fff08b6563bd55b1618a4530ea6fdb2d115181246aa30",
+    host="aarltvzb196yk5.coliuxyek4ei.us-east-2.rds.amazonaws.com",
+    database="ebdb",
+    user="hpqvlmmjobbfyn",
+    password="1eaf6697e7cb6c35fc065f42d18b3f81240c3207854405890f8269b4ce01e0de",
     port="5432"
 )
 cur = conn.cursor()
